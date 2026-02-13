@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="aparencia_Login.css">
+    <title>Login</title>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+  <div id="cont_t" class="container-fluid">
+    <a id ="Logo"class="navbar-brand">
+      <img  src="Recursos\Logo.PNG" alt ="logo">
+    </a>
+  
+ <button id="btn_op"class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#meuOffcanvas"
+          aria-controls="meuOffcanvas">
+     <span class="navbar-toggler-icon"></span>      
+    </button>
+  </div>  
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="meuOffcanvas">
+<div class="offcanvas-header">
+    <h6 class="offcanvas-title"> MENU</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+    </button>
+  </div>
+  <div class="offcanvas-body">
+  <ul class="lista1">
+    <li>
+      <div class="container1 item-click" data-link="Sobre.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+       SOBRE 
+      </div>
+    </li>
+
+    <li>
+    <div class="container1 item-click" data-link="R_S.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      RECLAMAÇÕES E SUJESTÕES
+    </div>
+    </li>
+
+    <li>
+      <div class="container1 item-click" data-link="Suporte.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      CANAIS DE SUPORTE
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+<div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+  
+    <div class="carousel-item active">
+      <img src="Recursos/banner_h_1.PNG" class="d-block w-100" alt="figura1">
+    </div>
+  
+    <div class="carousel-item">
+      <img src="Recursos/banner_h_2.PNG" class="d-block w-100" alt="figura2">
+    </div>
+  
+    <div class="carousel-item">
+      <img src="Recursos/banner_h_3.PNG" class="d-block w-100" alt="figura3">
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<div class="container">
+  <div class="title" >
+    JÁ SOU USUÁRIO DO INTERNET BANKING BANK'OO
+  </div>
+
+  <form class="row nowrap g-5">
+ <div class="col 12 col-sm-8 col-md-10 col-lg-12">
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrependu">@</span>
+      <input type="text" class="form-control " id="validationServerUsername" aria-describedby="inputGroupPrependu validationServerUsernameFeedback" required onblur="verif_u(this.value)" >
+      <div id="validationServerUsernameFeedback" class="feedback">
+   
+      </div>
+    </div>
+  </div>
+
+ <div class="col 12 col-sm-8 col-md-10 col-lg-12">
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepends">*</span>
+      <input type="text" class="form-control" id="validationServerPassword" aria-describedby="inputGroupPrepends validationServerPasswordFeedback" required onblur="verif_s(this.value)" >
+      <div id="validationServerPasswordFeedback" class="feedback">
+
+      </div>
+    </div>
+  </div>
+
+  </form>
+
+  <div class="d-grid gap-2 col-8 mx-auto">
+  <button class="btn" type="button">LOGIN</button>
+  </div>
+
+</div>
+
+
+
+<div class="container4 ">
+  <div class="col 12 col-sm-4 col-md-8 col-lg-12 text-center">
+    PAGAMENTOS E SOLUÇÕES FINANCEIRAS SLTDA.<br>
+
+    RUA...., N°..., BAIRRO...<br>
+     
+    CNPJ 636824378-74<br>
+
+    TODOS OS DIREITOS RESERVADOS<br>
+    
+    TELEFONE: (27) 99606-1030 ; (27) 99696-1034
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="Login.js"></script>
+
+</body>
+</html>

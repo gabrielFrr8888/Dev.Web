@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BANK'OOS  </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="aparencia.css">
+</head>
+
+<body>
+  
+<!--Cabeçalho!-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+  <div id="cont_t" class="container-fluid">
+    <a id ="Logo"class="navbar-brand">
+      <img  src="Recursos\Logo.PNG" alt ="logo">
+    </a>
+  
+ <button id="btn_op"class="btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#meuOffcanvas"
+          aria-controls="meuOffcanvas">
+     <span class="navbar-toggler-icon"></span>      
+    </button>
+  </div>  
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="meuOffcanvas">
+<div class="offcanvas-header">
+    <h6 class="offcanvas-title"> MENU</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+    </button>
+  </div>
+  <div class="offcanvas-body">
+  <ul class="lista1">
+    <li>
+      <div class="container1 item-click" data-link="Sobre.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+       SOBRE 
+      </div>
+    </li>
+
+    <li>
+    <div class="container1 item-click" data-link="R_S.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      RECLAMAÇÕES E SUJESTÕES
+    </div>
+    </li>
+
+    <li>
+      <div class="container1 item-click" data-link="Suporte.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      CANAIS DE SUPORTE
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<!--Cabeçalho da conta-->
+<div  class="card-footer text-center" >
+  <div class="col-6 col-sm-2 col-md-3">
+  TIPO: jddjjbcw
+  </div>
+  <div class="col-6 col-sm-2 col-md-3"> 
+  AGENCIA: XXXX
+  </div>
+  <div class="col-6 col-sm-2 col-md-3">
+   OP: XXXX   
+  </div>
+  <div class="col-6 col-sm-2 col-md-3">
+    CC: XXXXXXXX-XX
+  </div>
+</div>
+
+
+<!--Corpo !-->
+
+<div class="container my-4">
+  <div class="card text-center">
+    <div class="card-header">
+      
+      <ul class="nav nav-tabs card-header-tabs ">
+
+      <li class="nav-item">
+        <a class="nav-link active" id="card_saldo" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Saldo');">Saldo Atual</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="card_Emprestimo" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Emprestimo')">Empréstimos Ativos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="card_Finan" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Financiamentos')">Financiamentos Ativos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="card_saldo" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Cartão')">Cartão Ativo</a>
+      </li>  
+    
+      <li class="nav ms-auto " id="botn_olho">
+       <i id="btn_olho" class="bi-eye-slash-fill fs-4 cursor-pointer"
+       onclick="Mostrar()"></i>
+      </li>
+    
+    <li class="nav ms-2" style="padding:0% 1% 0% 1%">
+        <span class="position-absolute top-1 start-100 translate-right p-2 bg-danger border border-light rounded-circle">
+        <span class="visually-hidden"></span>
+        </span>
+        <i class="bi bi-bell-fill fs-4 cursor-pointer"
+       id="btn_sino">
+       </i> 
+    </li>
+    </ul>
+
+   <div class="card-body" id="cardBody">
+   <h1 class="card-title" id="Saldo"  ></h1>
+  <div id="lista_btn" class="d-flex justify-content-center gap-2">   
+    <button  type="button">PIX</button>
+    <button   type="button">PAGAR BOLETO</button>
+    <button   type="button">CHAVES</button>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="container2 my-4" >
+
+<div class="col-12 col-sm-8 col-md-10 col-lg-12">
+<div class="row g-4" style="gap:5%" >
+
+<div class="card text-center mb-3" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">TRANSFERIR</h5>
+    <p class="card-text">Pix, TED , Pagamento de Boletos e muito mais </p>
+    <a href="#" class="btn" style="margin-top:10%" ><i class="bi bi-wallet fs-2" ></i></a>
+  </div>
+</div>
+
+<div class="card text-center mb-3" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">EMPRÉSTIMOS</h5>
+    <p class="card-text">Análise de Renda, Contratos e Opções com parcelas que cabem no seu Bolso</p>
+    <a href="#" class="btn" >
+      <img src="Recursos\Emprestimo.png" alt="Mão trocando Dinheiro"  style="width:40%">
+    </a>
+  </div>
+</div>
+
+
+<div class="card text-center mb-3" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">FINANCIAMENTOS</h5>
+    <p class="card-text">Residencial, Imobiliario e tudo aquilo que seus sonhos podem alcançar</p>
+    <a href="#" class="btn" ><i class="bi bi-house-check-fill fs-2"  ></i></a>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<div class="col-12 col-sm-8 col-md-10 col-lg-12">
+<div class="row g-4" style="gap:10%;padding:5% 2% 5% 15.5%;" >
+
+  <div class="card text-center mb-3 " style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">BENEFÍCIOS</h5>
+    <p class="card-text">Bolsa Família, Auxílios Estaduais e Municipais. Com a Bank'oo , sua vida fica mais fácil</p>
+    <a href="#" class="btn" ><img src="Recursos\Financiamento.png" alt="Receba"></a>
+  </div>
+  </div>
+
+  <div class="card text-center mb-3 " style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">CARTÕES DE DÉBITO/CRÉDITO</h5>
+    <p class="card-text">Faturas , limites , Renegociação de Dívidas e Autenticação por dois fatores </p>
+    <a href="#" class="btn"><i class="bi bi-credit-card-fill fs-2"></i></a>
+  </div>
+  </div>
+
+</div>
+</div>
+
+
+</div>
+
+
+<div class="container3 my-4">
+  <div class="row g-2 text-center" id="caixa">
+  
+  <div class="col-12 col-md-4 col-lg-5 p-2">
+  <h3>Recebe FGTS, INSS ? </h3>
+  </h4>Veja as opções que ofertamos só para voçê</h4>
+  </div>
+  
+  
+  <div class="p-2 col-12 col-md-4 col-lg-5">
+  <h3>Negociar Dívidas </h3>
+  </h4>Veja detalhes e as melhores ofertaspara negociar suas dívidas e botar suas finanças no caminho certo</h4></div>
+  
+  <div class="p-2 col-12 col-md-4 col-lg-5">
+  <h3>Meus Limites </h3>
+  </h4>Veja seu escore e </h4></div>
+  
+  <div class="p-2 col-12 col-md-4 col-lg-5">    
+  <h3>Meu Perfil </h3>
+  </h4>Atualize seus dados e fique mais seguro</h4>
+  </div>
+
+</div>
+</div>
+
+<div class="container4">
+
+    PAGAMENTOS E SOLUÇÕES FINANCEIRAS SLTDA.<br>
+
+    RUA...., N°..., BAIRRO...<br>
+     
+    CNPJ 636824378-74<br>
+
+    TODOS OS DIREITOS RESERVADOS<br>
+    
+    TELEFONE: (27) 99606-1030 ; (27) 99696-1034
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="A_Conta.js"></script>
+
+
+</body>
+</html>

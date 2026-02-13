@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="aparencia_cadastro4.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+  <div id="cont_t" class="container-fluid">
+    <a id ="Logo"class="navbar-brand">
+      <img  src="Recursos\Logo.PNG" alt ="logo">
+    </a>
+  
+ <button id="btn_op"class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#meuOffcanvas"
+          aria-controls="meuOffcanvas">
+     <span class="navbar-toggler-icon"></span>      
+    </button>
+  </div>  
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="meuOffcanvas">
+<div class="offcanvas-header">
+    <h6 class="offcanvas-title"> MENU</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+    </button>
+  </div>
+  <div class="offcanvas-body">
+  <ul class="lista1">
+    <li>
+      <div class="container1 item-click" data-link="Sobre.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+       SOBRE 
+      </div>
+    </li>
+
+    <li>
+    <div class="container1 item-click" data-link="R_S.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      RECLAMAÇÕES E SUJESTÕES
+    </div>
+    </li>
+
+    <li>
+      <div class="container1 item-click" data-link="Suporte.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      CANAIS DE SUPORTE
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+  <div class="row g-2">
+ 
+  <div class="title">SOBRE SUA IDENTIDADE... </div>
+  
+  <form class="row g-4 needs-validation" novalidate>
+    
+<div class="col 12 col-sm-12 col-md-10 col-lg-3  position-relative" >
+<label for="validationTooltip04" class="form-label">CPF</label>  
+  <div class="input-group ">
+  <input type="text" class="form-control" aria-label="input-groupCPF">
+</div>
+</div>
+
+
+<div class="col 12 col-sm-12 col-md-10 col-lg-3  position-relative" >
+<label for="validationTooltip04" class="form-label">RG</label>  
+  <div class="input-group ">
+  <input type="text" class="form-control" aria-label="input-groupRG" >
+</div>
+</div>
+
+   <div class="col 8 col-sm-12 col-md-8 col-lg-6 position-relative">
+    <label for="validationTooltip04" class="form-label">Orgão Emissor</label>
+    <select class="form-select" id="validationTooltip04" required>
+    <option selected disabled value="">Escolha a seguir</option>
+    <option>Administrador</option>
+<option>SSP (Secretaria de Segurança Pública)</option>
+<option>IIC/IGP (Instituto de Identificação/Instituto Geral de Perícias)</option>
+<option>RFB (Receita Federal do Brasil)</option>
+<option>DPF (Departamento de Polícia Federal)</option>
+<option>DETRAN (Departamento de Trânsito)</option>
+<option>Cartório de Registro Civil</option>
+<option>OAB (Ordem dos Advogados do Brasil)</option>
+<option>CRM (Conselho Regional de Medicina)</option>
+<option>CREA (Conselho Regional de Engenharia e Agronomia)</option>
+<option>COREN (Conselho Regional de Enfermagem)</option>
+<option>CRC (Conselho Regional de Contabilidade)</option>
+<option>CRECI (Conselho Regional de Corretores de Imóveis)</option>
+<option>MTE/Ministério do Trabalho e Emprego</option>
+<option>INSS (Instituto Nacional do Seguro Social)</option>
+<option>TSE/TRE (Tribunal Superior Eleitoral/Tribunal Regional Eleitoral)</option>
+ 
+  </select>
+    <div class="invalid-tooltip">
+      Please select a valid state.
+    </div>
+  </div>
+
+  <div class="col 12 col-sm-12 col-md-8 col-lg-5 position-relative">
+    <label for="inputGroupFile0" class="form-label">Documento de Identidade (Frente)</label>  
+  <div class="input-group mb-3">
+  <input type="file" class="form-control" id="inputGroupFile0" >
+</div>
+</div>
+
+  <div class="column 12 col-sm-12 col-md-8 col-lg-5 position-relative">
+    <label for="inputGroupFile02" class="form-label">Documento de Identidade (Verso)</label>  
+  <div class="input-group mb-3">
+  <input type="file" class="form-control" id="inputGroupFile02" >
+</div>
+</div>
+
+<div class="container2">
+  <div class="col-12 ">
+    <button class="btn" type="submit" href="Cadastro2.html" style="margin-right:90%">
+    <i class="bi bi-arrow-return-left"></i></button>
+
+    <button class="btn" type="submit" href="Cadastro_5.html">
+    <i class="bi bi-arrow-return-right"></i></button>
+  </div>
+</div>
+</form>
+
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="A_cad4.js"></script>
+
+
+</body>
+</html>

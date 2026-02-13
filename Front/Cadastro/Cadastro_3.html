@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="aparencia_cadastro3.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+  <div id="cont_t" class="container-fluid">
+    <a id ="Logo"class="navbar-brand">
+      <img  src="Recursos\Logo.PNG" alt ="logo">
+    </a>
+  
+ <button id="btn_op"class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#meuOffcanvas"
+          aria-controls="meuOffcanvas">
+     <span class="navbar-toggler-icon"></span>      
+    </button>
+  </div>  
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="meuOffcanvas">
+<div class="offcanvas-header">
+    <h6 class="offcanvas-title"> MENU</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+    </button>
+  </div>
+  <div class="offcanvas-body">
+  <ul class="lista1">
+    <li>
+      <div class="container1 item-click" data-link="Sobre.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+       SOBRE 
+      </div>
+    </li>
+
+    <li>
+    <div class="container1 item-click" data-link="R_S.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      RECLAMAÇÕES E SUJESTÕES
+    </div>
+    </li>
+
+    <li>
+      <div class="container1 item-click" data-link="Suporte.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      CANAIS DE SUPORTE
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="container">
+  <div class="row g-2">
+ 
+  <div class="title">SOBRE SUA PROFISSÃO... </div>
+  
+  <form class="column g-5 needs-validation" novalidate>
+    
+    <div class="col 8 col-sm-12 col-md-8 col-lg-6 position-relative">
+    <label for="validationTooltip04" class="form-label">Profissão</label>
+    <select class="form-select" id="validationTooltip04" required>
+    <option selected disabled value="">Escolha a seguir</option>
+    <option>Administrador</option>
+<option>Advogado</option>
+<option>Agente de Viagens</option>
+<option>Agricultor</option>
+<option>Analista de Sistemas</option>
+<option>Arquiteto</option>
+<option>Assistente Administrativo</option>
+<option>Analista de Marketing</option>
+<option>Analista Financeiro</option>
+<option>Assistente Contábil</option>
+<option>Atendente</option>
+<option>Auditor</option>
+<option>Auxiliar de Escritório</option>
+<option>Auxiliar de Produção</option>
+<option>Auxiliar de Logística</option>
+<option>Bibliotecário</option>
+<option>Biólogo</option>
+<option>Bombeiro</option>
+<option>Cabeleireiro</option>
+<option>Caixa</option>
+<option>Carpinteiro</option>
+<option>Churrasqueiro</option>
+<option>Contador</option>
+<option>Copeiro</option>
+<option>Coordenador</option>
+<option>Corretor de Imóveis</option>
+<option>Cozinheiro</option>
+<option>Designer Gráfico</option>
+<option>Desenvolvedor de Software</option>
+<option>Diagramador</option>
+<option>Digitador</option>
+<option>Economista</option>
+<option>Eletricista</option>
+<option>Encanador</option>
+<option>Enfermeiro</option>
+<option>Engenheiro Civil</option>
+<option>Engenheiro Elétrico</option>
+<option>Engenheiro Mecânico</option>
+<option>Estatístico</option>
+<option>Estudante</option>
+<option>Estagiário</option>
+<option>Estoquista</option>
+<option>Farmacêutico</option>
+<option>Fisioterapeuta</option>
+<option>Fonoaudiólogo</option>
+<option>Fotógrafo</option>
+<option>Garçom</option>
+<option>Geógrafo</option>
+<option>Gestor de RH</option>
+<option>Guarda Municipal</option>
+<option>Historiador</option>
+<option>Inspetor de Qualidade</option>
+<option>Jardineiro</option>
+<option>Jornalista</option>
+<option>Lavador de Carros</option>
+<option>Leiturista</option>
+<option>Logístico</option>
+<option>Marceneiro</option>
+<option>Massoterapeuta</option>
+<option>Mecânico</option>
+<option>Médico</option>
+<option>Metalúrgico</option>
+<option>Motorista</option>
+<option>Nutricionista</option>
+<option>Operador de Caixa</option>
+<option>Operador de Máquinas</option>
+<option>Pedagogo</option>
+<option>Pedreiro</option>
+<option>Personal Trainer</option>
+<option>Pintor</option>
+<option>Policial</option>
+<option>Porteiro</option>
+<option>Professor</option>
+<option>Programador</option>
+<option>Psicólogo</option>
+<option>Publicitário</option>
+<option>Recepcionista</option>
+<option>Redator</option>
+<option>Repositor</option>
+<option>Secretário</option>
+<option>Segurança</option>
+<option>Soldador</option>
+<option>Supervisor</option>
+<option>Técnico em Eletrônica</option>
+<option>Técnico em Enfermagem</option>
+<option>Técnico em Informática</option>
+<option>Técnico em Segurança do Trabalho</option>
+<option>Telemarketing</option>
+<option>Tradutor</option>
+<option>Vendedor</option>
+<option>Veterinário</option>
+<option>Web Designer</option>
+<option>Zelador</option>
+<option>Gerente Comercial</option>
+<option>Instrutor</option>
+<option>Supervisor de Vendas</option>
+ 
+  </select>
+    <div class="invalid-tooltip">
+      Please select a valid state.
+    </div>
+  </div>
+
+<br>
+
+<div class="col 12 col-sm-6 col-md-8 col-lg-6  position-relative" >
+<label for="validationTooltip04" class="form-label">Renda Mensal (em R$)</label>  
+  <div class="input-group ">
+  <span class="input-group-text">R$</span>
+  <input type="text" class="form-control" aria-label="Real amount (with dot and two decimal places)" onclick="Ver_renda(this.value)">
+</div>
+</div>
+
+
+<div class="container2">
+  <div class="col-12 ">
+    <button class="btn" type="submit" href="Cadastro2.html" style="margin-right:90%">
+    <i class="bi bi-arrow-return-left"></i></button>
+
+    <button class="btn" type="submit" href="Cadastro_4.html">
+    <i class="bi bi-arrow-return-right"></i></button>
+  </div>
+</div>
+</form>
+
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="A_cad3.js"></script>
+
+
+</body>
+</html>
