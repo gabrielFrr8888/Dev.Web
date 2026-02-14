@@ -1,0 +1,46 @@
+<div class="container my-4">
+  <div class="card text-center">
+    <div class="card-header">
+      
+      <ul class="nav nav-tabs card-header-tabs ">
+
+      <li class="nav-item">
+        <a class="nav-link active" id="card_saldo" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Saldo');">Saldo Atual</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="card_Emprestimo" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Emprestimo')">Empréstimos Ativos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="card_Finan" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Financiamentos')">Financiamentos Ativos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="card_saldo" aria-current="true" href="#" onclick="Ativar(this);Mostrar_corpo('Cartão')">Cartão Ativo</a>
+      </li>  
+    
+      <li class="nav ms-auto " id="botn_olho">
+       <i id="btn_olho" class="bi-eye-slash-fill fs-4 cursor-pointer"
+       onclick="Mostrar()"></i>
+      </li>
+    
+    <li class="nav ms-2" style="padding:0% 1% 0% 1%">
+        <span class="position-absolute top-1 start-100 translate-right p-2 bg-danger border border-light rounded-circle">
+        <span class="visually-hidden"></span>
+        </span>
+        <i class="bi bi-bell-fill fs-4 cursor-pointer"
+       id="btn_sino">
+       </i> 
+    </li>
+    </ul>
+
+   <div class="card-body" id="cardBody">
+   <h1 class="card-title" id="Saldo"  >R$</h1>
+  <div id="lista_btn" class="d-flex justify-content-center gap-2">   
+    <button  type="button">PIX</button>
+    <button   type="button">PAGAR BOLETO</button>
+    <button   type="button">CHAVES</button>
+  </div>
+</div>
+
+</div>
+</div>
+</div>

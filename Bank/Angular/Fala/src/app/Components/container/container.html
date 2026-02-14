@@ -1,0 +1,46 @@
+<nav class="navbar px-3">
+  <div [id] ="containerID" class="container-fluid">
+
+    <a [id]="contLogo" class="navbar-brand" >
+    <img class="img-fluid" alt="logo" [ngSrc]="ImgLogo" width="160"height="40" /> 
+    </a>
+
+    <button class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#meuOffcanvas"
+      aria-controls="meuOffcanvas"
+      id="btn_op">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="meuOffcanvas">
+<div class="offcanvas-header">
+    <h6 class="offcanvas-title"> MENU</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+    </button>
+  </div>
+  <div class="offcanvas-body">
+  <ul class="lista1">
+    <li>
+      <div class="container1 item-click" data-link="Sobre.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+       SOBRE 
+      </div>
+    </li>
+
+    <li>
+    <div class="container1 item-click" data-link="R_S.html" data-bs-toggle="modal" data-bs-target="#modalAviso">
+      RECLAMAÇÕES E SUJESTÕES
+    </div>
+    </li>
+
+    <li>
+      <div class="container1 item-click" data-link="Suporte.html"data-bs-toggle="modal" data-bs-target="#modalAviso">
+      CANAIS DE SUPORTE
+      </div>
+    </li>
+  </ul>
+</div>
+</div>

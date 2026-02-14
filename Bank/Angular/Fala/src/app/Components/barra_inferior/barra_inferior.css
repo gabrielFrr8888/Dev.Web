@@ -1,0 +1,15 @@
+
+.card-footer{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    width:100%;
+
+    background-color: rgb(226, 46, 46);
+    border:9px solid red;
+    border-style: outset;
+    border-radius: 10px;
+
+    font-weight:750;
+}
+
