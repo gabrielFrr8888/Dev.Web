@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5%;
+
+    gap:100%;
+    max-width: 80%;
+
+}
+
+app-cad-seta-avancar{
+    margin-right: 10%;
+}
+
+app-cad-seta-voltar{
+    margin-left: 10%;
+}

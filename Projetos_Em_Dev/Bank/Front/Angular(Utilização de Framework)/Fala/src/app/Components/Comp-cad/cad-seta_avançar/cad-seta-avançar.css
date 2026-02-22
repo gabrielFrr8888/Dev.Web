@@ -1,0 +1,14 @@
+
+button[type="submit"]{
+    border:3px solid rgb(255, 255, 255);
+    background-color: rgb(9, 9, 9) !important;
+    font-size: bold;
+    color:white;
+}
+
+button[type="submit"]:hover{
+    transition: ease-in-out 0.7s;
+    border:3px solid white;
+    color:rgb(252, 0, 0);
+
+}

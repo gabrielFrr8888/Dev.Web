@@ -1,7 +1,8 @@
 
 .card-footer{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
     width:100%;
 
@@ -11,5 +12,7 @@
     border-radius: 10px;
 
     font-weight:750;
+
+    font-size: clamp(9px ,3vw, 17px);
 }
 
